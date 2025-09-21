@@ -10,7 +10,7 @@ console.log("SMTP user from env:", process.env.EMAIL_USER);
 this.transporter = nodemailer.createTransport({
   host: "smtp.titan.email",
   port: 465,
-  secure: true,
+  secure: false,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
